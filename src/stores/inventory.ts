@@ -1,11 +1,17 @@
 import { defineStore } from "pinia";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 import data from "./inventory.json";
 import type Inventory from "./Inventory.d";
 
 export const useInventoryStore = defineStore("inventory", () => {
   const inventory = ref(data as Inventory[]);
   const nextId = ref(data[data.length - 1].id + 1);
+
+  const lowInventory = computed(() => {
+    return inventory.value.filter(
+      (item) => item.actualAmount < item.minimalAmount
+    );
+  });
 
   const getAll = (): Inventory[] => {
     return inventory.value;
@@ -35,5 +41,5 @@ export const useInventoryStore = defineStore("inventory", () => {
     i.price = item.price;
   };
 
-  return { inventory, nextId, getAll, getById, create, update };
+  return { inventory, nextId, lowInventory, getAll, getById, create, update };
 });

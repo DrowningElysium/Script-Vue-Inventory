@@ -1,10 +1,11 @@
 <template>
   <div class="container">
-    <div class="d-flex justify-content-end mb-1">
-      <RouterLink
-        :to="{ name: 'inventory.create' }"
-        class="btn btn-success ms-auto"
-      >
+    <div class="d-flex justify-content-between mb-1">
+      <RouterLink :to="{ name: 'inventory.order' }" class="btn btn-primary">
+        Order
+      </RouterLink>
+
+      <RouterLink :to="{ name: 'inventory.create' }" class="btn btn-success">
         New item
       </RouterLink>
     </div>
