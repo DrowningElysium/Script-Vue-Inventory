@@ -27,16 +27,13 @@ export const useInventoryStore = defineStore("inventory", () => {
     if (!i) {
       return; // Normally I'd throw an exception, but that is currently too much work.
     }
+
+    i.productCode = item.productCode;
     i.name = item.name;
+    i.actualAmount = item.actualAmount;
+    i.minimalAmount = item.minimalAmount;
     i.price = item.price;
   };
 
-  const destroy = (item: Inventory): void => {
-    const index = inventory.value.findIndex(
-      (current) => current.id === item.id
-    );
-    inventory.value.splice(index, 1);
-  };
-
-  return { inventory, nextId, getAll, getById, create, update, destroy };
+  return { inventory, nextId, getAll, getById, create, update };
 });

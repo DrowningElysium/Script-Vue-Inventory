@@ -6,7 +6,7 @@ import { RouterLink, RouterView } from "vue-router";
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-1">
     <div class="container">
       <RouterLink :to="{ name: 'home' }" class="navbar-brand">
-        GroceryList
+        Inventory
       </RouterLink>
 
       <button
