@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "productCode": "ABC123",
+        "name": "HTML/CSS for dummies",
+        "actualAmount": 5,
+        "minimalAmount": 2,
+        "price": 15.99
+    },
+    {
+        "id": 2,
+        "productCode": "DEF456",
+        "name": "PHP for dummies",
+        "actualAmount": 2,
+        "minimalAmount": 2,
+        "price": 20.99
+    },
+    {
+        "id": 3,
+        "productCode": "GHI789",
+        "name": "SQL for dummies",
+        "actualAmount": 10,
+        "minimalAmount": 2,
+        "price": 25.99
+    },
+    {
+        "id": 4,
+        "productCode": "JKL493",
+        "name": "C# for dummies",
+        "actualAmount": 0,
+        "minimalAmount": 5,
+        "price": 30.99
+    },
+    {
+        "id": 5,
+        "productCode": "MNO373",
+        "name": "Java for dummies",
+        "actualAmount": 7,
+        "minimalAmount": 5,
+        "price": 30.99
+    },
+    {
+        "id": 6,
+        "productCode": "PQR435",
+        "name": "Haskell for dummies",
+        "actualAmount": 1,
+        "minimalAmount": 1,
+        "price": 46.99
+    },
+    {
+        "id": 6,
+        "productCode": "STU514",
+        "name": "Cooking for dummies",
+        "actualAmount": 30,
+        "minimalAmount": 20,
+        "price": 5.99
+    }
+]
